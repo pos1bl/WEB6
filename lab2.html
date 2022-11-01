@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arctic Monkeys</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</head>
+<body class="fon home">
+<header class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a href="" class="navbar-brand"><img class="logo"
+                                             src="https://i.pinimg.com/originals/81/a1/89/81a189de4809b794efe075dbe6f75434.png"
+                                             alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto mb-2">
+                <li class="nav-item">
+                    <a href="lab2.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="news.html" class="nav-link">News</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacts.html" class="nav-link">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a href="table.html" class="nav-link">Table</a>
+                </li>
+
+            </ul>
+            <div class="d-flex">
+                <button class="btn btn-outline-light"><a class="log buttonlog" href="#" data-toggle="modal"
+                                                         data-target="#signinModal">Sign
+                    in</a></button>
+                <button class="btn btn-outline-light ml-3"><a class="log buttonlog" href="#" data-toggle="modal"
+                                                              data-target="#loginModal">Log in</a></button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="modal fade" id="signinModal" tabindex="-1"
+     aria-labelledby="signinModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="signinModalLabel">Реєстрація</h4>
+                <button class="btn-close" data-dismiss="modal" aria-label="close">X</button>
+            </div>
+            <div class="modal-body">
+                <form class="js-form" novalidate onsubmit="return false;">
+                    <div class="row mb-3">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Пошта</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control js-input js-input-email" id="inputEmail"
+                                   placeholder="vladislav.orlenko@gmail.com">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label id="validationEmail" class="col-sm-12 col-form-label message"></label>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="inputPass" class="col-sm-2 col-form-label">Пароль</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control js-input" id="inputPass" placeholder="*********">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label id="validationPass" class="col-sm-12 col-form-label message"></label>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="inputName" class="col-sm-2 col-form-label">Ім'я</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control js-input js-input-name" id="inputName"
+                                   placeholder="Владислав">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label id="validationName" class="col-sm-12 col-form-label message"></label>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="inputSurname" class="col-sm-2 col-form-label">Прізвище</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control js-input js-input-surname" id="inputSurname"
+                                   placeholder="Орленко">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label id="validationSurname" class="col-sm-12 col-form-label message"></label>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="inputFather" class="col-sm-2 col-form-label">По-батькові</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control js-input js-input-father" id="inputFather"
+                                   placeholder="Іванович">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label id="validationFather" class="col-sm-12 col-form-label message"></label>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="inputDate" class="col-sm-2 col-form-label">Дата народження</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control js-input js-input-date" id="inputDate"
+                                   min="1990-01-01" max="2022-12-31">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label id="validationDate" class="col-sm-12 col-form-label message"></label>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="inputDate" class="col-sm-2 col-form-label">Номер телефону</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control phone-number js-input js-input-number" id="inputNumber"
+                                   placeholder="+38(000)000-00-00">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label id="validationNumber" class="col-sm-12 col-form-label message"></label>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label">Вибір статі</label>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="sex" id="boy" value="Хлопець"
+                                       checked>
+                                <label for="boy" class="form-check-label">Хлопець</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="sex" id="girl" value="Дівчина">
+                                <label for="girl" class="form-check-label">Дівчина</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="sex" id="another"
+                                       value="Інше">
+                                <label for="another" class="form-check-label">Інше</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label">Вибір групи</label>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="group" id="radios1" value="ІА-11"
+                                       checked>
+                                <label for="radios1" class="form-check-label">ІА-11</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="group" id="radios2"
+                                       value="ІА-12">
+                                <label for="radios2" class="form-check-label">ІА-12</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="group" id="radios3"
+                                       value="ІА-13">
+                                <label for="radios3" class="form-check-label">ІА-13</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="group" id="radios4"
+                                       value="ІА-14">
+                                <label for="radios4" class="form-check-label">ІА-14</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label id="validation" class="col-sm-12 col-form-label message"></label>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                        <button id="clear" class="btn btn-secondary buttonlog" data-dismiss="modal">Закрити</button>
+                        <button onclick="addHtmlTableRow()" class="btn btn-secondary buttonlog">Зберегти зміни</button>
+                        <button onclick="editHtmlTableSelectedRow()" class="btn btn-secondary buttonlog">Змінити</button>
+                        <button onclick="DeleteTableRow('table')" class="btn btn-secondary buttonlog">Видалити рядки
+                        </button>
+                        <button onclick="copyRows(table)" class="btn btn-secondary buttonlog">Додати рядки
+                        </button>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="table-responsive-lg">
+                            <table id="table" class="table table-light table-striped table-hover col-6">
+                                <tbody>
+                                <tr>
+                                    <th>Checkbox</th>
+                                    <th>Пошта</th>
+                                    <th>Пароль</th>
+                                    <th>Ім'я</th>
+                                    <th>Прізвище</th>
+                                    <th>По-батькові</th>
+                                    <th>Дата народження</th>
+                                    <th>Номер телефону</th>
+                                    <th>Стать</th>
+                                    <th>Група</th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="loginModal" tabindex="-1"
+     aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="loginModalLabel">Вхід</h4>
+                <button class="btn-close" data-dismiss="modal" aria-label="close">X</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row mb-3">
+                        <label for="logEmail" class="col-sm-2 col-form-label">Пошта</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="logEmail">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="logPass" class="col-sm-2 col-form-label">Пароль</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="logPass">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary buttonlog" data-dismiss="modal">Закрити</button>
+                <button class="btn btn-secondary buttonlog">Зберегти зміни</button>
+            </div>
+        </div>
+    </div>
+</div>
+<main>
+    <div class="row">
+        <div class="col-lg-2 col-sm-12 aside ">
+            <ul>
+                <li><a href="https://arcticmonkeys.com/" target="_blank">WebSite</a></li>
+                <li><a href="https://arcticmonkeys.com/live" target="_blank">Live</a></li>
+                <li><a href="https://store.arcticmonkeys.com/" target="_blank">Store</a></li>
+                <li><a href="https://store-eu.arcticmonkeys.com/" target="_blank">Arctic Monkeys EU</a></li>
+                <li><a href="https://store-us.arcticmonkeys.com/" target="_blank">Arctic Monkeys US</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-10 col-sm-12">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 px-5 py-5 ">
+                    <a href="https://open.spotify.com/track/5XeFesFbtLpXzIVDNQP22n?si=ffe9617b3c384b20"
+                       target="_blank">
+                        <img class="w-90" src="https://pbs.twimg.com/media/FWckDgZWYAA9jWI.jpg"></a>
+                </div>
+                <div class="col-lg-4 col-sm-6 px-5 py-5">
+                    <a href="https://open.spotify.com/track/2AT8iROs4FQueDv2c8q2KE?si=10353aa49e0d481e"
+                       target="_blank">
+                        <img class="w-90" src="https://pbs.twimg.com/media/FNQaIniWYAgz_l1.jpg"></a>
+                </div>
+                <div class="col-lg-4 col-sm-6 px-5 py-5">
+                    <a href="https://open.spotify.com/track/086myS9r57YsLbJpU0TgK9?si=915d2aa3073b4914"
+                       target="_blank">
+                        <img class="w-90" src="https://pbs.twimg.com/media/FOBNSodWUAM4YAz.jpg"></a>
+                </div>
+                <div class="col-lg-4 col-sm-6 px-5 py-5">
+                    <a href="https://open.spotify.com/track/0BxE4FqsDD1Ot4YuBXwAPp?si=42e629ecc4b84652"
+                       target="_blank">
+                        <img class="w-90" src="https://pbs.twimg.com/media/FYyf20fXoAEDDcf.jpg"></a>
+                </div>
+                <div class="col-lg-4 col-sm-6 px-5 py-5">
+                    <a href="https://open.spotify.com/track/5FVd6KXrgO9B3JPmC8OPst?si=b90812a521bd4d6f"
+                       target="_blank">
+                        <img class="w-90" src="https://pbs.twimg.com/media/FXO67fKXoAM83X7.jpg"></a>
+                </div>
+                <div class="col-lg-4 col-sm-6 px-5 py-5">
+                    <a href="https://open.spotify.com/track/4atMrAadB7dS8xn9vfk9PQ?si=81068f48a83f47bf"
+                       target="_blank">
+                        <img class="w-90" src="https://pbs.twimg.com/media/FURbQMJXsAES_qO.jpg"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-12 text-center p-5">
+            <div class="table-responsive-lg">
+                <table class="table table-light table-striped table-hover">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Mark#1</th>
+                        <th>Mark#2</th>
+                        <th>Mark#3</th>
+                        <th>Mark#4</th>
+                        <th>Mark#5</th>
+                        <th>Mark#6</th>
+                        <th>Mark#7</th>
+                        <th>Mark#8</th>
+                        <th>Mark#9</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Turner</td>
+                        <td>Alex</td>
+                        <td>10/10</td>
+                        <td>10/10</td>
+                        <td>10/10</td>
+                        <td>9/10</td>
+                        <td>9/10</td>
+                        <td>9/10</td>
+                        <td>9/10</td>
+                        <td>9/10</td>
+                        <td>9/10</td>
+
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Jamie</td>
+                        <td>Cook</td>
+                        <td>9/10</td>
+                        <td>9/10</td>
+                        <td>9/10</td>
+                        <td>7/10</td>
+                        <td>7/10</td>
+                        <td>7/10</td>
+                        <td>7/10</td>
+                        <td>7/10</td>
+                        <td>7/10</td>
+
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Matt</td>
+                        <td>Helders</td>
+                        <td>8/10</td>
+                        <td>8/10</td>
+                        <td>9/10</td>
+                        <td>9/10</td>
+                        <td>9/10</td>
+                        <td>6/10</td>
+                        <td>6/10</td>
+                        <td>6/10</td>
+                        <td>6/10</td>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-sm-12">
+            <p>
+                According to Vice, "in Britain at least, Arctic Monkeys have reached a point where they are too
+                enormous,
+                too beloved a force to truly fail" and are probably the UK's biggest, most culturally important band.
+                Vice further states that they are "the band that your friends whose music taste can otherwise be
+                described
+                as “Match of the Day-wave” are desperate to see perform live; the band dads and little brothers have in
+                common—simply because throughout their career, they have remained consistent, while their peers in both
+                sound and age have failed to keep similar longevity."[279] English poet John Cooper Clarke praised the
+                band as "the nearest thing" to the Beatles.[280] Radio X has also named Arctic Monkeys as one of the
+                best
+                bands of all time.
+            </p>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <p>
+                Following the success of Whatever People Say I Am, That's What I'm Not, some critics cited the Arctic
+                Monkeys
+                as revolutionising the way people find music as they built a fanbase on the basis of a few demos shared
+                by
+                fans through the internet.[282] Critics hugely praised the album for its depiction of youth British
+                Culture
+                and for resurging British indie music that had waned after the 1990s,[283] with NME declaring the Arctic
+                Monkeys
+                "Our Generation's Most Important Band".
+            </p>
+        </div>
+    </div>
+    <div class="lds-dual-ring d-flex justify-content-center w-100">
+
+    </div>
+</main>
+<footer class="text-center pt-4 my-md-5 pt-md-5 border-top ">
+    <div class="row">
+        <div class="col-12 col-md">
+            <h5>Social Media</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://www.instagram.com/arcticmonkeys/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/ArcticMonkeys/" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/arcticmonkeys" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md">
+            <h5>Music</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH" target="_blank">Spotify</a></li>
+                <li><a href="https://music.apple.com/us/artist/arctic-monkeys/62820413" target="_blank">Apple Music</a>
+                </li>
+                <li><a href="https://www.youtube.com/channel/UC-KTRBl9_6AX10-Y7IKwKdw" target="_blank">YouTube</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md">
+            <h5>Concerts</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://www.viagogo.com/ru/Concert-Tickets/Alternative-and-Indie/Arctic-Monkeys-Bilet"
+                       target="_blank">Viagogo</a></li>
+                <li><a href="https://ru.myrockshows.com/band/116-arctic-monkeys/" target="_blank">MyRockShows</a>
+                </li>
+                <li><a href="https://www.eventim.com.br/artist/arctic-monkeys/" target="_blank">Eventim</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md">
+            <h5>Contacts</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="tel:+380671898940">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/+xeBretHOOWpjZjc6" target="_blank">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:korovka.korovkina@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="imask.js"></script>
+<script src="phoneNumber.js"></script>
+<script src="validation.js"></script>
+</body>
+
+</html>

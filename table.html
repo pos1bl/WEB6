@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</head>
+<body class="newsback">
+<header class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a href="" class="navbar-brand"><img class="logo"
+                                             src="https://i.pinimg.com/originals/81/a1/89/81a189de4809b794efe075dbe6f75434.png"
+                                             alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto mb-2">
+                <li class="nav-item">
+                    <a href="lab2.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="news.html" class="nav-link">News</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacts.html" class="nav-link">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a href="table.html" class="nav-link">Table</a>
+                </li>
+
+            </ul>
+            <div class="d-flex">
+                <button class="btn btn-outline-light"><a class="log buttonlog" href="#" data-toggle="modal"
+                                                         data-target="#signinModal">Sign
+                    in</a></button>
+                <button class="btn btn-outline-light ml-3"><a class="log buttonlog" href="#" data-toggle="modal"
+                                                              data-target="#loginModal">Log in</a></button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="modal fade" id="signinModal" tabindex="-1"
+     aria-labelledby="signinModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog1"  >
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="signinModalLabel">Реєстрація</h4>
+                <button class="btn-close" data-dismiss="modal" aria-label="close">X</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row mb-3">
+                        <label  for="inputEmail" class="col-sm-2 col-form-label">Пошта</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputPass" class="col-sm-2 col-form-label">Пароль</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPass">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputName" class="col-sm-4 col-form-label">Ім'я</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputName">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputSurname" class="col-sm-4 col-form-label">Прізвище</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputSurname">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputFather" class="col-sm-4 col-form-label">По-батькові</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputFather">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputDate" class="col-sm-4 col-form-label">Дата народження</label>
+                        <div class="col-sm-8">
+                            <input type="date" class="form-control" id="inputDate">
+                        </div>
+                    </div>
+                    <div class="row mab-3">
+                        <label class="col-sm-2 col-form-label">Вибір групи</label>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="radios" id="radios1" value="option1" checked>
+                                <label for="radios1" class="form-check-label">ІА-11</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="radios" id="radios2" value="option1" checked>
+                                <label for="radios2" class="form-check-label">ІА-12</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="radios" id="radios3" value="option1" checked>
+                                <label for="radios3" class="form-check-label">ІА-13</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="radios" id="radios4" value="option1" checked>
+                                <label for="radios4" class="form-check-label">ІА-14</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary buttonlog" data-dismiss="modal">Закрити</button>
+                <button class="btn btn-secondary buttonlog">Зберегти зміни</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="loginModal" tabindex="-1"
+     aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="loginModalLabel">Вхід</h4>
+                <button class="btn-close" data-dismiss="modal" aria-label="close">X</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row mb-3">
+                        <label  for="logEmail" class="col-sm-2 col-form-label">Пошта</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="logEmail">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="logPass" class="col-sm-2 col-form-label">Пароль</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="logPass">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary buttonlog" data-dismiss="modal">Закрити</button>
+                <button class="btn btn-secondary buttonlog">Зберегти зміни</button>
+            </div>
+        </div>
+    </div>
+</div>
+<main>
+    <div class="row">
+        <div class="col-12  text-center p-5">
+            <div class="table-responsive-lg">
+                <table class="table table-light table-striped table-hover">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Прізвище</th>
+                        <th>Ім'я</th>
+                        <th>По-батькові</th>
+                        <th>Дата народження</th>
+                        <th>Група</th>
+                        <th>Пошта</th>
+                        <th>Пароль</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Орленко</td>
+                        <td>Владислав</td>
+                        <td>Іванович</td>
+                        <td>26.07.2004</td>
+                        <td>ІА-11</td>
+                        <td>korovka.korovkina@gmail.com</td>
+                        <td>123456789</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Мендик</td>
+                        <td>Софія</td>
+                        <td>Ігорівна</td>
+                        <td>28.05.2004</td>
+                        <td>ІА-11</td>
+                        <td>mendyksofi28@gmail.com</td>
+                        <td>sakda13asd</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Ученик</td>
+                        <td>Ілля</td>
+                        <td>Костянтинович</td>
+                        <td>03.09.2004</td>
+                        <td>ІА-11</td>
+                        <td>dyrik@gmail.com</td>
+                        <td>yadyrik</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Кириченко</td>
+                        <td>Ілля</td>
+                        <td>Андрійович</td>
+                        <td>16.08.2004</td>
+                        <td>ІА-11</td>
+                        <td>i.kirichenko2016@gmail.com</td>
+                        <td>doublecup</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>Михайленко</td>
+                        <td>Андрій</td>
+                        <td>Максимович</td>
+                        <td>09.11.2003</td>
+                        <td>ІА-13</td>
+                        <td>andrej.michaylenko@gmail.com</td>
+                        <td>juliysik</td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>Запотоцький</td>
+                        <td>Іван</td>
+                        <td>Андрійович</td>
+                        <td>07.01.2004</td>
+                        <td>ІА-13</td>
+                        <td>brvqck@gmail.com</td>
+                        <td>ARCWARDEN!</td>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td>Кузцєцов</td>
+                        <td>Євгеній</td>
+                        <td>Олександрович</td>
+                        <td>23.02.2004</td>
+                        <td>ІА-12</td>
+                        <td>besporqdok@gmail.com</td>
+                        <td>vintedDE</td>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <td>Ніклонський</td>
+                        <td>Артем</td>
+                        <td>Батькович</td>
+                        <td>08.03.2004</td>
+                        <td>ІА-13</td>
+                        <td>omejka.artem@gmail.com</td>
+                        <td>papasvin1337</td>
+                    </tr>
+                    <tr>
+                        <th>9</th>
+                        <td>Юхименко</td>
+                        <td>Павло</td>
+                        <td>Баранович</td>
+                        <td>01.01.2004</td>
+                        <td>ІА-12</td>
+                        <td>cyberpawa@gmail.com</td>
+                        <td>boyarkaMAN12</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="text-center pt-4 my-md-5 pt-md-5 border-top ">
+    <div class="row">
+        <div class="col-12 col-md">
+            <h5>Social Media</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://www.instagram.com/arcticmonkeys/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/ArcticMonkeys/" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/arcticmonkeys" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md">
+            <h5>Music</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH" target="_blank">Spotify</a></li>
+                <li><a href="https://music.apple.com/us/artist/arctic-monkeys/62820413" target="_blank">Apple Music</a>
+                </li>
+                <li><a href="https://www.youtube.com/channel/UC-KTRBl9_6AX10-Y7IKwKdw" target="_blank">YouTube</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md">
+            <h5>Concerts</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://www.viagogo.com/ru/Concert-Tickets/Alternative-and-Indie/Arctic-Monkeys-Bilet"
+                       target="_blank">Viagogo</a></li>
+                <li><a href="https://ru.myrockshows.com/band/116-arctic-monkeys/" target="_blank">MyRockShows</a>
+                </li>
+                <li><a href="https://www.eventim.com.br/artist/arctic-monkeys/" target="_blank">Eventim</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md">
+            <h5>Contacts</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="tel:+380671898940">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/+xeBretHOOWpjZjc6" target="_blank">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:korovka.korovkina@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="imask.js"></script>
+<script src="phoneNumber.js"></script>
+<script src="validation.js"></script>
+</body>
+</html>

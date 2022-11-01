@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+.error {
+    border-color: red;
+}
+.message{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+header {
+    background-color: #a46233;
+    font-weight: bold;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.aside {
+    border: 2px double burlywood;
+    text-align: left;
+    backdrop-filter: blur(15px);
+    font-weight: bold;
+    align-self: center;
+}
+
+.aside li {
+    list-style-type: none;
+}
+
+.aside a {
+    text-decoration: none;
+    color: #fc9952;
+    text-shadow: 2.5px 2.5px #5b432a;
+}
+
+.home main img {
+    box-shadow: 5px 5px burlywood;
+    border-radius: 20px;
+}
+
+.fon {
+    background-image: url("img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+table {
+    overflow-x: auto;
+}
+
+.home p {
+    backdrop-filter: blur(15px);
+    font-weight: bold;
+    text-align: center;
+    color: #fc9952;
+    text-shadow: 1px 1px #5b432a;
+    margin: 50px;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #dea054;
+    border-color: #945625 transparent #7e4e29 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+footer a {
+    text-decoration: none;
+    color: #fc9952;
+    text-shadow: 2.5px 2.5px #5b432a;
+}
+
+h5 {
+    color: #ab5c00;
+    text-shadow: 2px 2px #5b432a;
+    margin-bottom: 0;
+}
+
+.log {
+    text-decoration: none;
+    color: #fc9952;
+    text-shadow: 2.5px 2.5px #5b432a;
+    font-size: calc(1em + 0.3vw);
+}
+
+@media (min-width: 100px) {
+    .logo {
+        width: 4rem;
+    }
+    .modal-dialog1 {
+        width: 90vw !important;
+        max-width: 100%;
+    }
+
+    .modal-dialog1 label {
+        font-size: calc(2em + 0.1vw);
+    }
+
+    .modal-dialog1 input {
+        font-size: calc(2em + 0.1vw);
+    }
+
+}
+
+@media (min-width: 576px) {
+    h4 {
+        font-size: calc(2em + 0.1vw);
+    }
+
+    .modal-dialog1 {
+        width: 90vw !important;
+        max-width: 100%;
+    }
+
+    .modal-dialog1 label {
+        font-size: calc(2em + 0.1vw);
+    }
+
+    .modal-dialog1 input {
+        font-size: calc(2em + 0.1vw);
+    }
+
+    h5 {
+        font-size: calc(2em + 0.1vw);
+    }
+
+    footer a {
+        font-size: calc(1.8em + 0.1vw);
+    }
+
+    table {
+        font-size: calc(1.8em + 0.1vw);
+    }
+
+    p {
+        font-size: calc(2em + 0.1vw);
+    }
+
+    .aside {
+        font-size: calc(2.5em + 0.1vw);
+    }
+
+    header {
+        font-size: calc(3em + 0.1vw);
+    }
+
+    .logo {
+        width: calc(8rem + 0.1vw);
+    }
+
+    .buttonlog {
+        font-size: calc(2em + 0.1vw);
+    }
+}
+
+@media (min-width: 992px) {
+    h4 {
+        font-size: calc(1em + 0.1vw);
+    }
+
+    .modal-dialog1 {
+        width: 80vw !important;
+        max-width: 100%;
+    }
+
+    .modal-dialog1 label {
+        font-size: calc(1em + 0.1vw);
+    }
+
+    .modal-dialog1 input {
+        font-size: calc(1em + 0.1vw);
+    }
+
+    table {
+        font-size:  1em;
+    }
+
+    p {
+        font-size: calc(1em + 0.5vw);
+    }
+
+    .aside {
+        font-size: calc(1em + 1vw);
+    }
+
+    header {
+        font-size: calc(1em + 1vw);
+    }
+
+    .logo {
+        width: calc(1em + 8vw);
+    }
+
+    .buttonlog {
+        font-size: calc(1.25em + 0.1vw);
+    }
+}
+
+@media (max-width: 1250px) {
+    .blog-box {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .blog-box {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .blog-box {
+        margin: 20px 10px;
+        width: 100%;
+    }
+
+    #blog {
+        padding: 20px;
+    }
+
+}
+
+::selection {
+    color: #a46233;
+    background-color: #fab783;
+}
+
+.home img:hover {
+    transform: scale(1.2);
+    transition: all ease 0.3s;
+}
+
+a:hover {
+    color: #fab783;
+    transition: all ease 0.3s;
+}
+
+.news {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Popins, sans-serif;
+}
+
+.news a {
+    text-decoration: none;
+}
+
+.news ul {
+    list-style: none;
+}
+
+.news body {
+    margin: 0;
+    padding: 0;
+    font-family: Popins sans-serif;
+}
+
+#blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.blog-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog-heading span {
+    color: #7e4e29;
+}
+
+.blog-heading h3 {
+    font-size: 2.4rem;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.blog-box {
+    width: 350px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    margin: 20px;
+}
+
+.blog-img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-text span {
+    color: #7e4e29;
+    font-size: 0.9rem;
+}
+
+.blog-text .blog-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+}
+
+.blog-text .blog-title:hover {
+    color: #7e4e29;
+    transition: all ease 0.3s;
+}
+
+.blog-text p {
+    color: #daba92;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0;
+}
+
+.blog-text a {
+    color: #0f0f0f;
+}
+
+.blog-text a:hover {
+    color: #7e4e29;
+    transition: all ease 0.3s;
+}
+
+.newsback footer {
+    background-color: #a46233;
+}
+
+.newsback {
+    background-color: #dea054;
+}
+
+.faq {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Hind, sans-serif;
+    color: #411d01;
+    display: flex;
+    min-height: 100vh;
+}
+
+.faq::before, .faq::after {
+    box-sizing: border-box;
+}
+
+.containerfaq {
+    margin: 0 auto;
+    padding: 4rem;
+    width: 48rem;
+}
+
+.accordion .accordion-item {
+    border-bottom: 1px solid #7e4e29;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 1px solid #7e4e29;
+}
+
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7e4e29;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    color: #411d01;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: #411d01;
+    border: 1px solid #411d01;
+}
+
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+    color: #411d01;
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded='true'] + .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+}
+
+.contacts {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+
+.card {
+    background: #a46233;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-icon {
+    font-size: 28px;
+    background: #dea054;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+
+.card:hover .card-icon {
+    background: none;
+    color: #dea054;
+    transform: scale(1.6);
+}
+
+.card p {
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.card a {
+    text-decoration: none;
+    color: #fc9952;
+    text-shadow: 2.5px 2.5px #5b432a;
+
+}
+
+.card:hover p {
+    max-height: 40px;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 600px;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #411d01;
+    border-color: #7e4e29;
+}
+
+

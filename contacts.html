@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</head>
+<body class="newsback">
+<header class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a href="" class="navbar-brand"><img class="logo"
+                                             src="https://i.pinimg.com/originals/81/a1/89/81a189de4809b794efe075dbe6f75434.png"
+                                             alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto mb-2">
+                <li class="nav-item">
+                    <a href="lab2.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="news.html" class="nav-link">News</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacts.html" class="nav-link">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a href="table.html" class="nav-link">Table</a>
+                </li>
+
+            </ul>
+            <div class="d-flex">
+                <button class="btn btn-outline-light"><a class="log buttonlog" href="#" data-toggle="modal"
+                                                         data-target="#signinModal">Sign
+                    in</a></button>
+                <button class="btn btn-outline-light ml-3"><a class="log buttonlog" href="#" data-toggle="modal"
+                                                              data-target="#loginModal">Log in</a></button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="modal fade" id="signinModal" tabindex="-1"
+     aria-labelledby="signinModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="signinModalLabel">Реєстрація</h4>
+                <button class="btn-close" data-dismiss="modal" aria-label="close">X</button>
+            </div>
+            <div class="modal-body">
+                <form class="js-form" novalidate onsubmit="return false;">
+                    <div class="row mb-3">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Пошта</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control js-input js-input-email" id="inputEmail"
+                                   placeholder="vladislav.orlenko@gmail.com">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="inputPass" class="col-sm-2 col-form-label">Пароль</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control js-input" id="inputPass" placeholder="*********">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="inputName" class="col-sm-2 col-form-label">Ім'я</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control js-input js-input-name" id="inputName"
+                                   placeholder="Владислав">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="inputSurname" class="col-sm-2 col-form-label">Прізвище</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control js-input js-input-surname" id="inputSurname"
+                                   placeholder="Орленко">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="inputFather" class="col-sm-2 col-form-label">По-батькові</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control js-input js-input-father" id="inputFather"
+                                   placeholder="Іванович">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="inputDate" class="col-sm-2 col-form-label">Дата народження</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control js-input js-input-date" id="inputDate"
+                                   min="1990-01-01" max="2022-12-31">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label for="inputDate" class="col-sm-2 col-form-label">Номер телефону</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control phone-number js-input" id="inputNumber"
+                                   placeholder="+38(000)000-00-00">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label">Вибір статі</label>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="sex" id="boy" value="Хлопець"
+                                       checked>
+                                <label for="boy" class="form-check-label">Хлопець</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="sex" id="girl" value="Дівчина">
+                                <label for="girl" class="form-check-label">Дівчина</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="sex" id="another"
+                                       value="Інше">
+                                <label for="another" class="form-check-label">Інше</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label">Вибір групи</label>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="group" id="radios1" value="ІА-11"
+                                       checked>
+                                <label for="radios1" class="form-check-label">ІА-11</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="group" id="radios2"
+                                       value="ІА-12">
+                                <label for="radios2" class="form-check-label">ІА-12</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="group" id="radios3"
+                                       value="ІА-13">
+                                <label for="radios3" class="form-check-label">ІА-13</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="group" id="radios4"
+                                       value="ІА-14">
+                                <label for="radios4" class="form-check-label">ІА-14</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label id="validation" class="col-sm-12 col-form-label message"></label>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                        <button id="clear" class="btn btn-secondary buttonlog" data-dismiss="modal">Закрити</button>
+                        <button onclick="addHtmlTableRow()" class="btn btn-secondary buttonlog">Зберегти зміни</button>
+                        <button onclick="editHtmlTableSelectedRow()" class="btn btn-secondary buttonlog">Змінити</button>
+                        <button onclick="DeleteTableRow('table')" class="btn btn-secondary buttonlog">Видалити рядки
+                        </button>
+                        <button onclick="copyRows(table)" class="btn btn-secondary buttonlog">Додати рядки
+                        </button>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="table-responsive-lg">
+                            <table id="table" class="table table-light table-striped table-hover col-6">
+                                <tbody>
+                                <tr>
+                                    <th>Checkbox</th>
+                                    <th>Пошта</th>
+                                    <th>Пароль</th>
+                                    <th>Ім'я</th>
+                                    <th>Прізвище</th>
+                                    <th>По-батькові</th>
+                                    <th>Дата народження</th>
+                                    <th>Номер телефону</th>
+                                    <th>Стать</th>
+                                    <th>Група</th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="loginModal" tabindex="-1"
+     aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="loginModalLabel">Вхід</h4>
+                <button class="btn-close" data-dismiss="modal" aria-label="close">X</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row mb-3">
+                        <label  for="logEmail" class="col-sm-2 col-form-label">Пошта</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="logEmail">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="logPass" class="col-sm-2 col-form-label">Пароль</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="logPass">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary buttonlog" data-dismiss="modal">Закрити</button>
+                <button class="btn btn-secondary buttonlog">Зберегти зміни</button>
+            </div>
+        </div>
+    </div>
+</div>
+<main class="contacts">
+    <div class="contact-info">
+        <div class="card">
+            <i class="card-icon far fa-envelope"></i>
+            <a href="mailto:korovka.korovkina@gmail.com"> <p>vlad.pos1bl@gmail.com</p></a>
+        </div>
+
+        <div class="card">
+            <i class="card-icon fas fa-phone"></i>
+            <a href="tel:+380671898940"><p>+380671898940</p></a>
+        </div>
+
+        <div class="card">
+            <i class="card-icon fas fa-map-marker-alt"></i>
+            <a target="_blank" href="https://www.google.com/maps/place/%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4cf4ee15a4505:0x764931d2170146fe?sa=X&ved=2ahUKEwiW1sOC0cn6AhUIM-wKHQ4DAcQQ8gF6BAhoEAE"><p>Kyiv, Ukraine</p></a>
+        </div>
+    </div>
+</main>
+<footer class="text-center pt-4 my-md-5 pt-md-5 border-top newsback">
+    <div class="row">
+        <div class="col-12 col-md">
+            <h5>Social Media</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://www.instagram.com/arcticmonkeys/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/ArcticMonkeys/" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/arcticmonkeys" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md">
+            <h5>Music</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH" target="_blank">Spotify</a></li>
+                <li><a href="https://music.apple.com/us/artist/arctic-monkeys/62820413" target="_blank">Apple Music</a>
+                </li>
+                <li><a href="https://www.youtube.com/channel/UC-KTRBl9_6AX10-Y7IKwKdw" target="_blank">YouTube</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md">
+            <h5>Concerts</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://www.viagogo.com/ru/Concert-Tickets/Alternative-and-Indie/Arctic-Monkeys-Bilet"
+                       target="_blank">Viagogo</a></li>
+                <li><a href="https://ru.myrockshows.com/band/116-arctic-monkeys/" target="_blank">MyRockShows</a>
+                </li>
+                <li><a href="https://www.eventim.com.br/artist/arctic-monkeys/" target="_blank">Eventim</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md">
+            <h5>Contacts</h5>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="tel:+380671898940">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/+xeBretHOOWpjZjc6" target="_blank">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:korovka.korovkina@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="imask.js"></script>
+<script src="phoneNumber.js"></script>
+<script src="validation.js"></script>
+</body>
+</html>
